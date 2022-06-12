@@ -15,9 +15,9 @@ class AlephLayer
                 level => new Decimal(1e6).pow(Decimal.pow(1.5, level)),
                 level => new Decimal(1).add(Decimal.max(0, game.alephLayer.aleph).add(1).log10().mul(level).mul(0.05)).pow(2.5)),
             deltaBoost: new AlephUpgrade("Gain more &delta;",
-                level => Decimal.pow(1e5, level).mul(1e3),
-                level => Decimal.pow(10, level), {
-                    maxLevel: 4
+                level => Decimal.pow(1e5, level).mul(100),
+                level => Decimal.pow(1e6, level), {
+                    maxLevel: 500
                 }),
             powerGenerators: new AlephUpgrade("All Power Generators on every Layer are stronger",
                 level => Utils.createValueDilation(Decimal.pow(1e5, Decimal.pow(level, 1.5)).mul(1e20), 0.001),
@@ -31,9 +31,9 @@ class AlephLayer
                 level => Utils.createValueDilation(Decimal.pow(1e30, level).mul(1e100), 0.01),
                 level => game.layers[0] ? Decimal.pow(new Decimal(1.1).add(level.mul(0.1)), Decimal.max(0, game.layers[0].resource).add(1).log10().add(1).log10()) : new Decimal(1)),
             betterBetaFormula: new AlephUpgrade("The &beta; Prestige Formula is better",
-                level => new Decimal(1e90),
-                level => new Decimal(1).add(level.mul(0.12)), {
-                    maxLevel: 1,
+                level => new Decimal(1e50).mul(1e50),
+                level => new Decimal(1).add(level.mul(1.5)), {
+                    maxLevel: 2,
                     getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                 }),
             prestigeRewards: new AlephUpgrade("Increase the Prestige Reward of all Layers",
@@ -65,7 +65,7 @@ class AlephLayer
     {
         if(functions.maxLayerUnlocked() < 3) return new Decimal(0);
         if(game.layers[3].timesReset === 0) return new Decimal(0);
-        return Decimal.pow(10, Math.max(0, functions.maxLayerUnlocked() - 3));
+        return Decimal.pow(15, Math.max(0, functions.maxLayerUnlocked() - 3));
     }
 
     maxAll()
