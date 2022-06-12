@@ -13,6 +13,12 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
+        ["Legacy Up Arrow",
+        [
+            "ツㄡ∝↑",
+            "!#$%*|",
+            "嘡∫∬∭"
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
