@@ -55,7 +55,7 @@ class Challenge
             case CHALLENGE_REWARD_POWERGENERATORS:
                 return "All Power Generators are x" + functions.formatNumber(this.applyReward(), 2, 2) + " stronger";
             case CHALLENGE_REWARD_GENMULTI:
-                return "All Generator Multiplicators per 10 Levels are +" + functions.formatNumber(this.applyReward(), 3, 3) + " better";
+                return "All generator Multiplicators per 10 Levels are +" + functions.formatNumber(this.applyReward(), 3, 3) + " better";
             case CHALLENGE_REWARD_PRESTIGEREWARD:
                 return "Prestige Reward of Layer " + PrestigeLayer.getNameForLayer(this.cfg.layerid) + " is x" + functions.formatNumber(this.applyReward(), 2, 2) + " higher";
             case CHALLENGE_REWARD_GENMULTI_ABS:
