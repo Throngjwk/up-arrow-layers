@@ -3,16 +3,16 @@ Vue.component("news-ticker", {
     {
         return {
             messages: [
-                "modding.net",
-                "layer name moment",
-                "weird themes",
-                "hey, you could make a mod out of this",
-                "when the imp- oh wrong mod",
-                "basically there is a thi- (softcapped)",
-                "incremental thing i guess",
-                "omega layers but steam engine",
+                "my engine disk",
+                "up arrow layers",
+                "10<sup>10</sup>",
+                "yes yes",
+                "<a href='https://raw.githack.com/conicgames/conicgames.github.io/master/exponentialidle/index.html'>play exponential idle for conic games.</a>",
+                "yes",
+                "hi",
+                "omega engine",
                 "mod.js: powering layers",
-                "i ran out of words on my hard drive :("
+                ":)"
             ],
             currentMessage: "",
             messageIndex: -1
