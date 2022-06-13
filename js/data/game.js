@@ -92,7 +92,6 @@ const game = {
     achievements: [
         new Achievement("up arrow", "yes do it!", "&uparrow;", () => true),
         new Achievement("million", "speed speed", "⋙<sub>10,000</sub>", () => game.alephLayer.aleph.gte("1e6"))
-        new Achievement("billion", "speed speed", "⋙<sub>10,000,000</sub>", () => game.alephLayer.aleph.gte("1e9"))
     ],
     secretAchievements: [
         new Achievement("A very long wait...", "Have a game with over 3 months of time", "...", () => game.timeSpent > 50803200),
