@@ -12,8 +12,33 @@ Vue.component("guide-tab", {
     },
     template: `<div class="guide-tab">
     <guide-item>
-        <template v-slot:title>Coming soon</template>
-        <template v-slot:text>in a later update
+        <template v-slot:title>big task</template>
+        <template v-slot:text>what
+        </template>
+    </guide-item>
+    <guide-item>
+        <template v-slot:title>Omega Squared</template>
+        <template v-slot:text>ω<sup>2</sup>
+        </template>
+    </guide-item>
+    <guide-item>
+        <template v-slot:title>Omega Cubed</template>
+        <template v-slot:text>ω<sup>3</sup>
+        </template>
+    </guide-item>
+    <guide-item>
+        <template v-slot:title>Omega Hyperdimenosial</template>
+        <template v-slot:text>ω<sup>ω</sup>
+        </template>
+    </guide-item>
+    <guide-item>
+        <template v-slot:title>Restack</template>
+        <template v-slot:text>i mind restack coin?
+        </template>
+    </guide-item>
+    <guide-item>
+        <template v-slot:title>Task</template>
+        <template v-slot:text>task no go this game?
         </template>
     </guide-item>
 </div>`
