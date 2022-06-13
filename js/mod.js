@@ -13,6 +13,18 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
+        ["Who First",
+        [
+            ["Exponential Idle","f(t) = $ee16544.979","db = 1.97e4297","dmu = 4.22e11640","dpsi = 1.86e113"],
+            "EZ",
+            ["sigma = 198", "dsigma = 9","mu = 1.99e17209", "psi = 2.98e188"]
+        ]],
+        ["Sussy Layers",
+        [
+            ["○","☛","🔫","🗡","ඞ"],
+            "</-=+x>",
+            ["<span class='flipped-v'>ඞ</span>", "α","β", "γ"]
+        ]],
         ["Legacy Up Arrow",
         [
             "ツㄡ∝↑",
